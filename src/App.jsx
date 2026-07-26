@@ -1,35 +1,30 @@
-import { useState } from 'react'
 import './App.css'
-import Status from './components/Status.jsx'
-import Calculator from './components/Calculator.jsx'
-import ShoppingList from './components/ShoppingList.jsx'
-import Card from './components/Card.jsx'
-import UserProfile from './components/UserProfile.jsx'
-
-const products = ['Хлеб', 'Молоко', 'Яйца']
-
-const userData = {
-  name: 'Иван',
-  age: 30,
-  city: 'Москва'
-}
+import UserCard from './components/UserCard'
+import Product from './components/Product'
+import Button from './components/Button'
+import Layout from './components/Layout'
 
 function App() {
+
   return (
-      <main>
-        <Calculator a={10} b={5} />
+      <>
+        <UserCard name='Маша'/>
+        <UserCard name='Петя'/>
+        <UserCard name='Вася'/>
         <hr/>
-        <Status isLoggedIn = { true } />
-        <Status isLoggedIn = { false } />
+        <Product title='Абрикосы' isInStock={false} />
+        <Product title='Бананы' isInStock={true} />
         <hr/>
-        <ShoppingList items = { products }/>
+        <Button text='Кнопочка' color='red'/>
+        <Button text='Нажми меня' color='green'/>
+        <Button text='Моя кнопка' color='blue'/>
+        <Button text='Тык-тык'/>
         <hr/>
-        <Card title = 'Моя карточка'>
-          <p>Тут ребенок</p>
-          <button>И еще кнопка внутри</button>
-        </Card>
-        <UserProfile user = { userData }/>
-      </main>
+        <Layout title='Тест обертки'>
+          <UserCard name='Вася Иванов'/>
+            <Product title='Урановая руда' isInStock={false} />
+        </Layout>
+      </>
   )
 }
 
