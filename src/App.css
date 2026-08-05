@@ -1,0 +1,59 @@
+body{
+    font-family: "Leelawadee UI Semilight" ;
+    background: #efefef;
+}
+
+.done{
+    text-decoration: line-through #6fbe6f;
+}
+
+li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: 2.5rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 2px;
+}
+
+.list{
+    width: 400px;
+    border-radius: 3px;
+}
+
+.list-text{
+    width: 150px;
+    font-weight: bold;
+    color: #00071f;
+    transition: 200ms;
+}
+
+button{
+    background: #fafafa;
+    border: 1px solid #9d9d9d;
+    border-radius: 3px;
+    height: 1.8rem;
+    transition: 0.4s;
+}
+
+button:hover{
+    background: #e7e7e7;
+}
+
+input{
+    height: 1.6rem;
+    border-radius: 3px;
+    border: 1px solid #9d9d9d;
+}
+
+.container{
+    background: #fcfcfc;
+    padding: 1rem;
+    border-radius: 5px;
+}
