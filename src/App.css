@@ -1,44 +1,13 @@
-body{
-    font-family: "Leelawadee UI Semilight" ;
-    background: #efefef;
-}
-
-li{
+li {
     display: flex;
-    align-items: center;
-    text-align: center;
-    list-style: none;
-    height: 2.5rem;
+    width: 100px;
+    justify-content: space-between;
 }
 
-ul{
-    padding: 0;
-    width: 80%;
-    gap: 10rem;
-    border-radius: 5px;
-}
-
-.checkbox-wrapper{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    gap: 4px
-}
-
-.delete-button{
-    display: flex;
-    height: 1.7rem;
-    text-align: center;
-    align-items: center;
-    gap: 5px;
-    font-size: 10px;
-    color: #9a0808
-}
-
-.checkbox{
-    transform: translateY(-5px);
-}
-
-.completed{
-    text-decoration: line-through;
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
 }
